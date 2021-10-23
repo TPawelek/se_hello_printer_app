@@ -31,8 +31,8 @@ o Continuous Integration, Continuous Delivery i Continuous Deployment.
     $ make test
   # Uruchomienie aplikacji na maszynie dev:
     $ make run
-```
-- Uruchamianie applikacji:
+  ```
+- Uruchamianie aplikacji:
 
   ```
   # jako zwykły program
