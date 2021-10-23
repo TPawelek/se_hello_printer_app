@@ -23,14 +23,14 @@ o Continuous Integration, Continuous Delivery i Continuous Deployment.
 
 -  Uruchamianie applikacji z Makefile:
   ```
-    Instalacja wszystkich pakietow wymaganych dla naszego programu:
-      make deps
-    Uruchomienie linter-a:
-      make lint
-    Uruchomienie testow:
-      make test
-    Uruchomienie aplikacji na maszynie dev:
-      make run
+  # Instalacja wszystkich pakietow wymaganych dla naszego programu:
+    $ make deps
+  # Uruchomienie linter-a:
+    $ make lint
+  # Uruchomienie testow:
+    $ make test
+  # Uruchomienie aplikacji na maszynie dev:
+    $ make run
 ```
 - Uruchamianie applikacji:
 
