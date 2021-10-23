@@ -18,7 +18,19 @@ o Continuous Integration, Continuous Delivery i Continuous Deployment.
   $ pip list
   ```
 
-  Sprawdź: [tutorial venv](https://docs.python.org/3/tutorial/venv.html) oraz [biblioteki flask](http://flask.pocoo.org).
+  Sprawdź: [tutorial venv](https://docs.python.org/3/tutorial/venv.html)
+  oraz [biblioteki flask](http://flask.pocoo.org).
+
+  Uruchamianie applikacji z Makefile:
+
+    Instalacja wszystkich pakietow wymaganych dla naszego programu:
+      make deps
+    Uruchomienie linter-a:
+      make lint
+    Uruchomienie testow:
+      make test
+    Uruchomienie aplikacji na maszynie dev:
+      make run
 
 - Uruchamianie applikacji:
 
@@ -47,7 +59,7 @@ o Continuous Integration, Continuous Delivery i Continuous Deployment.
   ```
   ...
 
-  # aktywacja 
+  # aktywacja
   $ source .venv/bin/activate
   ```
 
@@ -81,6 +93,7 @@ o Continuous Integration, Continuous Delivery i Continuous Deployment.
       https://download.docker.com/linux/centos/docker-ce.repo
 
   $ yum makecache fast
+
   $ yum install -y docker-ce
   $ systemctl start docker
   ```
