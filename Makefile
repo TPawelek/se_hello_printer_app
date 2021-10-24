@@ -6,8 +6,13 @@ deps:
 
 lint:
 	flake8 hellow_world test
+
 test:
 	PYTHONPATH=. py.test
 	PYTHONPATH=. py.test --verbose -s
+
 run:
 	PYTHONPATH=. FLASK_APP=hello_world flask run
+
+docker_build:
+	docker build -t hello-world-printer .

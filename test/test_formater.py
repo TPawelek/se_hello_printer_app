@@ -9,5 +9,3 @@ class TestFormater(unittest.TestCase):
         msg = r.split(" ")[1]
         self.assertTrue(name.isupper())
         self.assertTrue(msg.isupper())
-
-        
