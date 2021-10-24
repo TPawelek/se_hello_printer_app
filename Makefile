@@ -8,7 +8,7 @@ deps:
 	pip install -r test_requirements.txt
 
 lint:
-	flake8 hellow_world test
+	flake8 hello_world test
 
 test:
 	PYTHONPATH=. py.test
