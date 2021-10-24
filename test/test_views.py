@@ -20,10 +20,12 @@ class FlaskrTestCase(unittest.TestCase):
 
     def test_msg_with_output_xml(self):
         rv = self.app.get('/?output=xml')
-        self.assertEqual(b'<greetings><name>Tomek</name><msg>Hello World!</msg>'+
-                        b'</greetings>', rv.data)
+        self.assertEqual(b'<greetings><name>Tomek</name><msg>' +
+                         'Hello World!</msg>' +
+                         b'</greetings>', rv.data)
+
     def test_msg_with_output_json_with_name(self):
         expected_name = "Justyna"
-        rv = self.app.get('/?output=json&name='+ expected_name)
+        rv = self.app.get('/?output=json&name=' + expected_name)
         rd = json.loads(rv.data)
         self.assertEqual(expected_name, rd['imie'])
