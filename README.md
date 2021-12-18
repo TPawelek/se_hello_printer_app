@@ -98,5 +98,7 @@ o Continuous Integration, Continuous Delivery i Continuous Deployment.
   ```
 ## Monitoring
   - Statuscaake https://hidden-island-66844.herokuapp.com/
+<a href="https://www.statuscake.com" title="Website Uptime Monitoring"><img src="https://app.statuscake.com/button/index.php?Track=6226023&Days=1&Design=2" /></a>
 
-[![Build Status](https://app.travis-ci.com/TPawelek/se_hello_printer_app.svg?branch=master)](https://app.travis-ci.com/TPawelek/se_hello_printer_app)
+  - Travis
+  [![Build Status](https://app.travis-ci.com/TPawelek/se_hello_printer_app.svg?branch=master)](https://app.travis-ci.com/TPawelek/se_hello_printer_app)
