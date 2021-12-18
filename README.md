@@ -4,7 +4,6 @@ Aplikacja Dydaktyczna wyświetlająca imię i wiadomość w różnych formatach 
 o Continuous Integration, Continuous Delivery i Continuous Deployment.
 
 - W projekcie wykorzystamy virtual environment, dla utworzenia hermetycznego środowisko dla aplikacji:
-
   ```
   # tworzymy hermetyczne środowisko dla bibliotek aplikacji:
   $ python3 -m venv .venv
@@ -97,3 +96,7 @@ o Continuous Integration, Continuous Delivery i Continuous Deployment.
   $ yum install -y docker-ce
   $ systemctl start docker
   ```
+## Monitoring
+  - Statuscaake https://hidden-island-66844.herokuapp.com/
+
+[![Build Status](https://app.travis-ci.com/TPawelek/se_hello_printer_app.svg?branch=master)](https://app.travis-ci.com/TPawelek/se_hello_printer_app)
