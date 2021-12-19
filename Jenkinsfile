@@ -1,32 +1,3 @@
-Skip to content
-Search or jump to…
-Pulls
-Issues
-Marketplace
-Explore
-
-@TPawelek
-YuiKinoko
-/
-se_hello_printer_app
-Public
-forked from wojciech11/se_hello_printer_app
-Code
-Pull requests
-Actions
-Projects
-Wiki
-Security
-Insights
-se_hello_printer_app/Jenkinsfile
-@YuiKinoko
-YuiKinoko wyglad Jenkinsfile
-Latest commit ca0ece1 32 minutes ago
- History
- 2 contributors
-@YuiKinoko@skarab7
-49 lines (48 sloc)  1.39 KB
-
 pipeline {
     agent any
     stages {
