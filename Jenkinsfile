@@ -12,7 +12,7 @@ pipeline {
                 }
         stage('Linter') {
             steps {
-                      sh 'make lint'
+                    sh 'make lint'
                 }
         }
     }
