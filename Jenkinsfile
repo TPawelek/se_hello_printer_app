@@ -28,8 +28,8 @@ pipeline {
             }
         }
 
-    post{
-        always{
+        post{
+          always{
             chuckNorris()
             cobertura autoUpdateHealth: false,
                       autoUpdateStability: false,
@@ -43,6 +43,7 @@ pipeline {
                       onlyStable: false,
                       sourceEncoding: 'ASCII',
                       zoomCoverageChart: false
+          }
         }
     }
 }
