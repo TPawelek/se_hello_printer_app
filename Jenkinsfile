@@ -3,14 +3,14 @@ pipeline {
     stages {
         stage('Deps') {
             steps {
-                    sh 'make deps'
-                }
+                sh 'make deps'
             }
+        }
         stage('Linter') {
             steps {
-                    sh 'make lint'
-                }
+                sh 'make lint'
             }
+        }
         stage('Test') {
             steps {
                 sh 'make test_xunit || true'
@@ -25,8 +25,8 @@ pipeline {
     	                skipNoTestFiles: false,
     	                stopProcessingIfError: true)
     	            ]
-              }
-          }
+            }
+        }
 
     post{
         always{
