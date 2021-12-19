@@ -6,15 +6,43 @@ pipeline {
                     sh 'make deps'
                 }
             }
-        stage('Test') {
+        stage("test") {
             steps {
-                    sh 'make test'
-                }
-            }
+                    sh 'make test_xunit || true'
+                    xunit thresholds: [
+                        skipped(failureThreshold: '0'),
+                        failed(failureThreshold: '1')
+                        ],
+                        tools: [
+                            JUnit(deleteOutputFiles: true,
+                                  failIfNotNew: true,
+                                  pattern: 'test_results.xml',
+                                  skipNoTestFiles: false,
+                                  stopProcessingIfError: true)
+                        ]
+        }
+    }
         stage('Linter') {
             steps {
                     sh 'make lint'
                 }
+        }
+    }
+    post{
+        always{
+            chuckNorris()
+            cobertura autoUpdateHealth: false,
+                      autoUpdateStability: false,
+                      coberturaReportFile: 'coverage.xml',
+                      conditionalCoverageTargets: '70, 0, 0',
+                      failUnhealthy: false,
+                      failUnstable: false,
+                      lineCoverageTargets: '80, 0, 0',
+                      maxNumberOfBuilds: 0,
+                      methodCoverageTargets: '80, 0, 0',
+                      onlyStable: false,
+                      sourceEncoding: 'ASCII',
+                      zoomCoverageChart: false
         }
     }
 }
